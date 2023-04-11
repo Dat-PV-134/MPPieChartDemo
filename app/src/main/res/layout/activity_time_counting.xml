@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeCountingActivity">
+
+    <dk.fjinc.flipperclocklibrary.CountDownClock
+        android:id="@+id/countDownClock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:almostFinishedCallbackTimeInSeconds="5"
+        app:animationDuration="350"
+        app:countdownTickInterval="250"
+        app:digitDividerColor="@color/teal_200"
+        app:digitPadding="3dp"
+        app:digitSplitterColor="@color/purple_500"
+        app:digitTextColor="@color/black"
+        app:digitTextSize="18sp"
+        app:digitWidth="40dp"
+        app:halfDigitHeight="15dp"
+        app:resetSymbol="8"
+        app:splitterPadding="1dp" />
+</RelativeLayout>
